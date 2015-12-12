@@ -1,0 +1,15 @@
+li {
+	display: inline;
+}
+
+li:nth-child(even) {
+	background-color: lime;
+}
+
+section:nth-child(odd) {
+	border: 2px solid red;
+}
+
+
+
+section:

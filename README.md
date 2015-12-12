@@ -28,10 +28,10 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
+  Student answer:**Hoisting is the process that the JavaScript interpreter uses to "hoist" declarations to the top of the current scope. It's important to declare variables at the top of scope, because if they're declared further down a script, the declarations will be hoisted but the initialized values won't be, giving us bugs, bugs, bugs.**
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
-  **Student answer: **
+  Student answer:**A callback is a function that is passed as an argument to another function and will be 'called back' to execute at the appropriate point in a script.**
 
 ## Functions and operators
 
@@ -60,19 +60,19 @@ http-server
 
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
 1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
-  **Student answer:**
+  **POST, GET, PUT, DELETE:**
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
-  **Student answer:**
+  **We use Promises because JavaScript is single-threaded, meaning a given function or event may inevitably block our asynchronous XHR calls. A Promise can only succeed or fail once, though, and our associated success or failure callback functions (via the then() method) will be guaranteed to execute with the appropriate outcome, avoiding the blocking that happens without Promises.**
 
 1. Provide a simple example of the syntax for handling a Promise.
-  **Student answer:**
+  **xhrCall().then(function(resultantData){ console.log('success!') }, function(error) {console.log('error due to: ', error)});**
 
 ## Scope and this
 
 What gets logged to the console when the following code executes? Explain why.
 
-**Student answer: **
+**Student answer:42 gets logged to the console. The reason for this is that, because the function steve() is called on the global object (window), 'this.answer' references the global variable 42 on the window object.**
 
 ```
 var answer = "42";
